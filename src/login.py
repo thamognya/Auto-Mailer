@@ -6,11 +6,17 @@ class login_class:
     def __init__(self):
         pass
     def random_num(self):
-        return randrange(10)
+        # get a random num
+        rand_num = randrange(10)
+        # return it
+        return rand_num
     def useragent(self):
+        # get a useragent
         useragent = UserAgent()
+        # return it
         return useragent.random
     def email(self):
+        # use the several differnt mail accounts you have. Stored in ./emails/my_emails.txt
         if (self.random_num() == 0):
             email = "something"
         elif (self.random_num() == 1):
@@ -33,6 +39,5 @@ class login_class:
             email = "something"
         else:
             email = "something"
-
+        # return it
         return email
-
